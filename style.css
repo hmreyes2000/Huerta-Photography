@@ -1,0 +1,381 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0;
+    background-color: rgb(235, 233, 233);
+}
+
+
+/* header  area */
+
+header #branding {
+    margin-left: 75px;
+}
+
+header {
+    background-color: rgb(235, 233, 233);
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: solid rgb(235, 233, 233);
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 1em 3em 1em 3em;
+}
+
+
+/* top nav bar area */
+
+nav {
+    float: right;
+    margin-top: -75px;
+    margin-right: 40px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: grey;
+    transition: .5s ease-out;
+    border-bottom: 1px solid grey;
+}
+
+
+/* footer area */
+
+.footer {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    color: grey;
+}
+
+
+/* content hover effect */
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 387px;
+    position: relative;
+    cursor: pointer;
+    margin: 40px;
+    margin-top: 3px;
+    overflow: hidden;
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.box img {
+    width: 75%;
+    height: 100%;
+    transition: all .5s;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    background: rgba(225, 225, 225, 0.5);
+    flex-direction: column;
+    color: white;
+    clip-path: circle(0% at 50% 50%);
+    transition: all .5s;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+.box:hover .content {
+    clip-path: circle(100% at 50% 50%);
+}
+
+.box:hover img {
+    filter: blur(10px);
+    transform: scale(1.1);
+}
+
+
+/* About page */
+
+h1.page-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 2.5rem;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400px;
+}
+
+h1.page-title-about {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 75px;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400px;
+}
+
+.about img {
+    display: flex;
+    margin: 30px auto;
+    margin-left: 390px;
+}
+
+.bio-1 p {
+    margin: 40px auto;
+    margin-left: 660px;
+    margin-right: 400px;
+    line-height: 32px;
+}
+
+.bio-2 p {
+    text-align: center;
+    /*margin-left: 390px;*/
+    line-height: 38px;
+}
+
+.bio-3 p {
+    text-align: center;
+}
+
+.bio-4 {
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.bio-4 a {
+    color: black;
+}
+
+.bio-4 a:hover {
+    color: grey;
+}
+
+.bio-contact p {
+    text-align: center;
+    line-height: 70px;
+}
+
+.bio-contact a {
+    color: black;
+    font-size: 20px;
+}
+
+.bio-contact a:hover {
+    color: grey;
+}
+
+
+/* portrait, landscape, and sports page */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 50px 0;
+    margin-left: 180px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 130%;
+    margin-bottom: 45px;
+}
+
+.bottom-menu p {
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-left: 188px;
+    margin-right: 192px;
+}
+
+.bottom-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.bottom-menu a:hover {
+    color: grey;
+    transition: 0.3s ease-out;
+}
+
+
+/* contact form page*/
+
+.contact-text h1 {
+    text-align: left;
+    margin-top: 120px;
+    margin-left: 78px;
+    font-size: 47px;
+}
+
+.contact-text p {
+    text-align: left;
+    margin-left: 78px;
+    margin-right: 800px;
+    line-height: 35px;
+}
+
+.icons {
+    margin-left: 78px;
+    font-size: x-large;
+    letter-spacing: 10px;
+}
+
+.icons a {
+    color: black;
+}
+
+.icons a:hover {
+    color: grey;
+}
+
+input[type=text] {
+    width: 79.5%;
+    margin-bottom: 35px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.container {
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+.container form {
+    margin-left: 750px;
+    margin-top: -225px;
+}
+
+label {
+    display: block;
+    line-height: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button :hover {
+    box-shadow: 0 8px 65px -5px #ccc;
+}
+
+.button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    line-height: 68px;
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    border: 2px solid black;
+    border-radius: 8px;
+    min-width: 150px;
+    padding: 0 24px;
+    box-shadow: 0 10px 60px -10px lightgrey;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/*submission either success or error*/
+
+section {
+    flex-direction: column;
+}
+
+#status {
+    text-align: center;
+    width: 81%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(215, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

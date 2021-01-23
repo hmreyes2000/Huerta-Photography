@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RH PHOTOGRAPHY | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top nav bar -->
+    <header>
+        <div id="branding">
+            <a href="index.html"><img src="Images/RH_logo.png" alt="RH Photography" height="100" width="100" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portrait.html">Portrait</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="landscape.html">landscape</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+
+<!-- portrait content hover -->
+
+<section>
+    <div class="contact-text">
+        <h1>Contact.</h1>
+        <br><br>
+        <p>Please use this form to inquire about the rights to a photo or to schedule a shoot.</p>
+        <br><br>
+        <div class="icons">
+            <a href="https://www.instagram.com/reyes.hm/"><i class="fab fa-instagram"></i></a>
+            <a href="hmreyes2000@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <form action="https://formspree.io/f/xrgoowdz" method="POST" id="my-form">
+            <div>
+                <!--first name-->
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="" required="required">
+                <!--last name-->
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="" required="required">
+            </div>
+            <div>
+                <!--Email-->
+                <label for="email">Email</label>
+                <input type="text" id="name" name="email" placeholder="" required="required">
+            </div>
+            <!--message-->
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="" rows="9" cols="50"></textarea>
+            </div>
+            <br>
+            <div class="button-wrapper">
+                <!--submit button-->
+                <button class="button" type="submit" name="submit">Send</button>
+            </div>
+            <div id="status"></div>
+        </form>
+    </div>
+</section>
+<script src="contactform.js"></script>
+
+<footer>
+    <div class="footer">
+        <p>
+            Bridgeport, CT 06605 || <a href="tel:2035792727">(203) 556-1758</a>
+        </p>
+        <p>
+            Copyright &copy; 2021 RH PHOTOGRAPHY
+        </p>
+    </div>
+</footer>
+
+</html>
