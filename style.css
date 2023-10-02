@@ -5,7 +5,12 @@ body {
 }
 
 
+
 /* header  area */
+
+script {
+    margin-right: 100px;
+}
 
 header #branding {
     margin-left: 75px;
@@ -52,6 +57,7 @@ nav a:hover {
 }
 
 
+
 /* footer area */
 
 .footer {
@@ -73,6 +79,7 @@ nav a:hover {
 
 
 /* content hover effect */
+
 
 * {
     margin: 0%;

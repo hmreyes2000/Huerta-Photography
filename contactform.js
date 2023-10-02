@@ -14,6 +14,8 @@ window.addEventListener("DOMContentLoaded", function() {
         status.innerHTML = "Thanks!";
     }
 
+    // An error will occur if the information is invalid
+
     function error() {
         status.classList.add('error');
         status.innerHTML = "Oops! There was a problem.";
